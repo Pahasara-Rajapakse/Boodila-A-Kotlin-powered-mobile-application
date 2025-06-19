@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".OwnerMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:titleMarginTop="45dp"
+        android:background="#2196F3"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="බෝdima"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo200p"
+            app:tint="#2196F3"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Say goodbye to the hassle of finding\nstudent housing! Our app helps you\neasily discover affordable rooms near\nyour university, connect with\nlandlords securely, and find your ideal\nhome away from home."
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5dp"
+            android:textStyle="italic"
+            android:layout_marginHorizontal="20dp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:text="START"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/get_start_icon"
+            android:drawableTint="@color/white"
+            android:paddingStart="40dp"
+            android:paddingEnd="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

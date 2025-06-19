@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment_place_a_add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POST AN AD"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/lavender"
+                    android:layout_marginBottom="50dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Information"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/owner_info"
+                    android:drawableTint="@color/lavender"
+                    android:drawablePadding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Name"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/etOwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:textSize="16sp"
+                    android:gravity="start|center"
+                    android:hint="Your name will appear here"
+                    android:textColorHint="@color/secondary_text"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/secondary_text"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:textSize="16sp"
+                    android:gravity="start|center"
+                    android:hint="Your address will appear here"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/secondary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:textSize="16sp"
+                    android:gravity="start|center"
+                    android:hint="Your mobile number will appear here"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/secondary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:textSize="16sp"
+                    android:gravity="start|center"
+                    android:hint="Your email address will appear"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/secondary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select University"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/universityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:textSize="16sp"
+                    android:gravity="start|center"
+                    android:hint="Your university will appear"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/secondary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:entries="@array/universities"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageButton
+                    android:id="@+id/btnReloadOwner"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/card_background"
+                    android:drawableTint="@color/lavender"
+                    app:tint="@color/lavender"
+                    android:src="@drawable/refresh_icon"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Room Information"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/room_info"
+                    android:drawableTint="@color/lavender"
+                    android:drawablePadding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Room Images (Select at least one)"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/btnUploadImages"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Images"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/lavender"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="15dp"
+                    android:drawableStart="@drawable/add_image_icon"
+                    android:drawableTint="@color/white"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/imagesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Beds"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp" />
+
+                <EditText
+                    android:id="@+id/etBeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:hint="Enter number of beds"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Room Type"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/secondary_text"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgRoomType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp">
+
+                    <RadioButton
+                        android:id="@+id/rbShared"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shared"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="40dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbSingle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Single"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Room Price"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <EditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:hint="Enter room price"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/secondary_text"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter boarding distance from the univesity (Km)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp" />
+
+                <EditText
+                    android:id="@+id/etDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.5dp"
+                    android:hint="Enter boarding distance"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/secondary_text"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Advanced Information"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/advance_info"
+                    android:drawableTint="@color/lavender"
+                    android:drawablePadding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Advanced Facilities"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:paddingTop="8dp"
+                    android:layout_marginStart="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginStart="15dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxKitchen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kitchen"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="40dp"/>
+
+                    <CheckBox
+                        android:id="@+id/chechBoxStudy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Study Area"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/description_icon"
+                    android:drawableTint="@color/lavender"
+                    android:drawablePadding="10dp"/>
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:textSize="16sp"
+                    android:hint="Enter description here..."
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/secondary_text"
+                    android:gravity="start"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="15dp"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I confirm that the information provided is accurate."
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:layout_marginStart="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="160dp"
+                        android:layout_height="48dp"
+                        android:text="CLEAR"
+                        android:textSize="16sp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/button_hover_effect"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="16dp"
+                        android:drawableStart="@drawable/cancel_button_icon"
+                        android:drawableTint="@color/white"
+                        />
+
+                    <Space
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="160dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/button_hover_effect"
+                        android:backgroundTint="@color/lavender"
+                        android:text="SUBMIT"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:drawableStart="@drawable/submit_button_icon"
+                        android:drawableTint="@color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

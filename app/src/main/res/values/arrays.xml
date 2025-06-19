@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="room_types">
+        <item>Single Room</item>
+        <item>Shared Room</item>
+    </string-array>
+
+
+    <string-array name="bed_counts">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 9 </item>
+        <item> +10 </item>
+
+    </string-array>
+
+    <string-array name="sortData">
+        <item> Price : Low to High </item>
+        <item> Price : High to Low </item>
+        <item> Date  : Newest on top </item>
+        <item> Date  : Oldest on top </item>
+    </string-array>
+
+    <string-array name="universities">
+        <item> University of Kelaniya </item>
+        <item> University of Peradeniya </item>
+        <item> University of Ruhuna </item>
+        <item> University of Colombo </item>
+        <item> University of Jaffna </item>
+        <item> University of Moratuwa </item>
+        <item> University of Sri Jayewardenepura </item>
+        <item> Eastern University, Sri Lanka </item>
+        <item> South Eastern University of Sri Lanka </item>
+        <item> University of the Visual and Performing Arts </item>
+        <item> Sabaragamuwa University of Sri Lanka </item>
+        <item> Wayamba University of Sri Lanka </item>
+        <item> Uva Wellassa University </item>
+        <item> Rajarata University of Sri Lanka </item>
+        <item> The Open University of Sri Lanka </item>
+        <item> Gampaha Wickramarachchi University of Indigenous Medicine </item>
+        <item> National Institute of Social Development </item>
+    </string-array>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment_about_us">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/background_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT US"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/lavender"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo200p"
+            android:contentDescription="App Icon"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="බෝdima"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/lavender"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:id="@+id/about_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This application helps students find boarding places and allows boarding owners to post advertisements. It offers filtering options, detailed room descriptions, and a user-friendly interface to simplify the process."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/secondary_text"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider_color"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/developer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed By"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/developer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group 11"
+            android:textSize="16sp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/developer_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: pasindupahasara1@gmail.com"
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginBottom="50dp" />
+
+        <Button
+            android:id="@+id/contact_us_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Contact Us"
+            android:background="@drawable/rounded_button_for_owner"
+            android:backgroundTint="@color/lavender"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/email_logo"
+            android:drawableTint="@color/white"
+            android:paddingEnd="40dp"/>
+    </LinearLayout>
+
+</FrameLayout>

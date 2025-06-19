@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:padding="20dp"
+    android:layout_margin="16dp"
+    android:clipToPadding="false"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_setup"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/passwordTipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setup your profile!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/passwordTipDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Click the navigation button.\n• Click the PROFILE icon.\n• Setup your profile information.\n• Click 'SAVE' button.\n• Update your info through 'UPDATE' button."
+        android:textSize="16sp"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/gray_dark"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonUnderstood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_for_owner"
+        android:text="Got It!"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        android:padding="10dp" />
+</LinearLayout>
